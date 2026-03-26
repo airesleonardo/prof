@@ -19,7 +19,12 @@
     .header-center { flex: 1; text-align: center; }
     .header-center h1 { margin: 0.5rem 0; }
     nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; }
-    nav a { text-decoration: none; color: #333; font-weight: bold; font-size: 0.95em; }
+    nav a, nav a:visited { 
+      text-decoration: none !important; 
+      color: #333 !important; 
+      font-weight: bold; 
+      font-size: 0.95em; 
+    }
     .section { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
     .pub-block { 
       background: #f9f9f9; 
@@ -33,22 +38,25 @@
     .pub-link:hover { text-decoration: underline; }
     .pub-year { color: #666; font-style: italic; margin-bottom: 1rem; }
     footer { text-align: center; padding: 1rem; background: #f4f4f4; margin-top: 3rem; }
-    @media (max-width: 768px) { header { flex-direction: column; text-align: center; } nav ul { flex-wrap: wrap; } }
+    @media (max-width: 768px) { 
+      header { flex-direction: column; text-align: center; } 
+      nav ul { flex-wrap: wrap; justify-content: center; } 
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="ufu-logo.png" alt="UFU" class="logo">
+    <img src="ufu-logo.png" alt="UFU" class="logo" onerror="this.outerHTML='<div class=\"logo\">UFU</div>';">
     <div class="header-center">
       <h1>Leonardo Aires de Castro</h1>
     </div>
     <nav>
       <ul>
-        ><a href="index.html">Home</a></li>
-        ><a href="pesquisa.html">Pesquisa</a></li>
-        ><a href="teaching.html">Ensino</a></li>
-        ><a href="publications.html">Publicações</a></li>
-        ><a href="contact.html">Contato</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pesquisa.html">Pesquisa</a></li>
+        <li><a href="ensino.html">Ensino</a></li>
+        <li><a href="publications.html">Publicações</a></li>
+        <li><a href="contact.html">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -97,17 +105,4 @@
     </div>
     
     <div class="pub-block">
-      <a href="https://www.teoriaepesquisa.ufscar.br/index.php/tp/article/view/663/402" target="_blank" class="pub-title pub-link">
-        A crise da democracia anunciada: Brasil entre o déficit democrático, a democracia do público e a crise democrática
-      </a>
-      <div class="pub-year">Teoria & Pesquisa Revista de Ciência Política, 2018</div>
-      <p>Resumo: Discussão teórica sobre as crises democráticas no Brasil, articulando déficit democrático, democracia do público e colapso institucional.</p>
-    </div>
-    
-  </section>
-  
-  <footer>
-    <p>&copy; 2026 Leonardo Aires de Castro. Feito com GitHub Pages.</p>
-  </footer>
-</body>
-</html>
+      <a href="
