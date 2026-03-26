@@ -1,0 +1,12 @@
+<!-- Mesmo head/header -->
+<section class="section">
+  <h1>Pesquisa</h1>
+  <h2>Áreas Principais</h2>
+  <ul>
+    <li>Gênero e Política</li>
+    <li>Interseccionalidades</li>
+    <li>Trajetórias Políticas de Mulheres</li>
+  </ul>
+  <h2>Projetos Atuais</h2>
+  <p>Laboratório de Pesquisa em Gênero e Política (UFU).</p>
+</section>
