@@ -4,52 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leonardo Aires de Castro – Ciência Política</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    header { 
+      background: #f4f4f4; 
+      padding: 0.5rem 1rem; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      position: sticky; top: 0; 
+      flex-wrap: wrap; 
+    }
+    .logo { height: 50px; width: auto; }
+    .header-center { flex: 1; text-align: center; }
+    .header-center h1 { margin: 0.5rem 0; }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; }
+    nav a, nav a:visited { 
+      text-decoration: none !important; 
+      color: #333 !important; 
+      font-weight: bold; 
+      font-size: 0.95em; 
+    }
+    .hero { max-width: 800px; margin: 2rem auto; padding: 0 1rem; text-align: center; }
+    .section { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    footer { text-align: center; padding: 1rem; background: #f4f4f4; margin-top: 3rem; }
+    @media (max-width: 768px) { 
+      header { flex-direction: column; text-align: center; } 
+      nav ul { flex-wrap: wrap; justify-content: center; } 
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Leonardo Aires de Castro</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Pesquisa</a></li>
-        <li><a href="teaching.html">Ensino</a></li>
-        <li><a href="publications.html">Publicações</a></li>
-        <li><a href="contact.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-    <img src="foto.jpg" alt="Foto de Leonardo" style="width: 200px; height: auto; border-radius: 50%;">
-    <h2>Professor de Ciência Política</h2>
-    <p>PhD em Ciência Política, pesquisador em gênero, política e interseccionalidades. Universidade Federal de Uberlândia (UFU).</p>
-    <p><a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=40474A44DB991303AF2EB3D437E1C735#" target="_blank">Currículo Lattes (CNPq)</a></p>
-</style>
-</head>
-<body>
-  <header>
-    <h1>Leonardo Aires de Castro</h1>
+    <img src="ufu-logo.png" alt="UFU" class="logo" onerror="this.outerHTML='<div class=\"logo\">UFU</div>';">
+    <div class="header-center">
+      <h1>Leonardo Aires de Castro</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="pesquisa.html">Pesquisa</a></li>
-        <li><a href="teaching.html">Ensino</a></li>
+        <li><a href="ensino.html">Ensino</a></li>
         <li><a href="publications.html">Publicações</a></li>
         <li><a href="contact.html">Contato</a></li>
       </ul>
     </nav>
   </header>
+  
   <section class="hero">
-    <img src="foto.jpg" alt="Foto de Leonardo" style="width: 200px; height: auto; border-radius: 50%;"> <!-- Substitua por sua foto -->
+    <img src="foto.jpg" alt="Foto de Leonardo" style="width: 200px; height: auto; border-radius: 50%;">
     <h2>Professor de Ciência Política</h2>
     <p>PhD em Ciência Política, pesquisador em gênero, política e interseccionalidades. Universidade Federal de Uberlândia (UFU).</p>
-   <p><a href="http://lattes.cnpq.br/7840982484537748" target="_blank">Currículo Lattes (CNPq)</a></p>
+    <p><a href="http://lattes.cnpq.br/7840982484537748" target="_blank">Currículo Lattes (CNPq)</a></p>
   </section>
+  
   <section class="section">
     <h2>Resumo</h2>
     <p>Professor adjunto no Instituto de Ciências Sociais da Universidade Federal de Uberlândia (UFU). Foi professor da Secretaria de Educação do Estado de Goiás e na Escola de Governo do Estado de Goiás. Doutor e mestre em Ciência Política pela Universidade Federal de São Carlos (UFSCar). Graduado em Ciências Sociais pela Universidade Federal de Goiás (UFG) em 2015, graduado em Direito pela Una Catalão em 2022. Especialista em Direito Eleitoral e Político pela CERS e em Ciências de Dados pela USP/ESALQ. Foi bolsista FAPESP de 2016 a 2022 em nível de mestrado e doutorado. É coordenador do Laboratório de Estudos Estatísticos em Gênero e Intersseccionalidades (LEGIs) da UFU. É pesquisador do Laboratório de Estudos Políticos e Eleitorais (LEPE) da Universidade Federal de Catalão, no Núcleo de Estudos dos Partidos Políticos Latino-Americanos (NEPPLA) da Universidade Federal de São Carlos. Foi Pesquisador Visitante na Universidade de Cornell/EUA.</p>
     <p>Disciplinas lecionadas: Ciência Política, Teorias da Democracia</p>
   </section>
+  
   <footer>
     <p>&copy; 2026 Leonardo Aires de Castro. Feito com GitHub Pages.</p>
   </footer>
