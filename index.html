@@ -5,31 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leonardo Aires de Castro – Ciência Política</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    :root {
+      --ufu-azul: #003399;
+      --ufu-azul-claro: #0056b3;
+      --fundo-escuro: #1a1a1a;
+      --header-escuro: #0d1117;
+      --texto-claro: #e0e0e0;
+      --texto-secundario: #8b949e;
+      --borda: #30363d;
+    }
+    body { 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      line-height: 1.6; 
+      color: var(--texto-claro); 
+      background: var(--fundo-escuro); 
+    }
     header { 
-      background: #f4f4f4; 
+      background: var(--header-escuro); 
+      border-bottom: 1px solid var(--borda); 
       padding: 0.5rem 1rem; 
       display: flex; 
       align-items: center; 
-      justify-content: space-between; 
+      justify-content: center; 
       position: sticky; top: 0; 
-      flex-wrap: wrap; 
+      gap: 2rem;
     }
-    .logo { height: 50px; width: auto; }
-    .header-center { flex: 1; text-align: center; }
-    .header-center h1 { margin: 0.5rem 0; }
+    .header-center { text-align: center; flex: 1; }
+    .header-center h1 { 
+      margin: 0.5rem 0; 
+      color: var(--ufu-azul-claro); 
+      font-weight: 600; 
+    }
     nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; }
     nav a, nav a:visited { 
       text-decoration: none !important; 
-      color: #333 !important; 
-      font-weight: bold; 
+      color: var(--texto-claro) !important; 
+      font-weight: 500; 
       font-size: 0.95em; 
+      transition: color 0.2s; 
     }
+    nav a:hover { color: var(--ufu-azul-claro) !important; }
     .hero { max-width: 800px; margin: 2rem auto; padding: 0 1rem; text-align: center; }
     .section { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    footer { text-align: center; padding: 1rem; background: #f4f4f4; margin-top: 3rem; }
+    .foto-perfil {
+      width: 200px; 
+      height: 200px; 
+      object-fit: cover; 
+      border-radius: 50%; 
+      border: 4px solid var(--borda); 
+      box-shadow: 0 8px 24px rgba(0,51,153,0.4);
+      margin-bottom: 1rem;
+    }
+    h1, h2 { color: #ffffff; }
+    footer { 
+      text-align: center; 
+      padding: 1.5rem; 
+      background: #161b22; 
+      border-top: 1px solid var(--borda); 
+      margin-top: 3rem; 
+      color: var(--texto-secundario); 
+    }
     @media (max-width: 768px) { 
-      header { flex-direction: column; text-align: center; } 
+      header { flex-direction: column; gap: 0.5rem; text-align: center; } 
       nav ul { flex-wrap: wrap; justify-content: center; } 
     }
   </style>
@@ -51,11 +90,11 @@
   </header>
   
   <section class="hero">
-  <img src="foto.jpg" alt="Leonardo Aires de Castro" class="foto-perfil">
-  <h2>Professor de Ciência Política</h2>
-  <p>PhD em Ciência Política, pesquisador em gênero, política e interseccionalidades. Universidade Federal de Uberlândia (UFU).</p>
-  <p><a href="http://lattes.cnpq.br/7840982484537748" target="_blank">Currículo Lattes (CNPq)</a></p>
-</section>
+    <img src="foto.jpg" alt="Leonardo Aires de Castro" class="foto-perfil">
+    <h2>Professor de Ciência Política</h2>
+    <p>PhD em Ciência Política, pesquisador em gênero, política e interseccionalidades. Universidade Federal de Uberlândia (UFU).</p>
+    <p><a href="http://lattes.cnpq.br/7840982484537748" target="_blank">Currículo Lattes (CNPq)</a></p>
+  </section>
   
   <section class="section">
     <h2>Resumo</h2>
@@ -68,3 +107,4 @@
   </footer>
 </body>
 </html>
+
